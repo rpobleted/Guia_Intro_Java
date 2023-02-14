@@ -14,12 +14,14 @@ public class Ejercicio_extra_02 {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
+        // DECLACION DE VARIABLES
         int A;
         int B;
         int C;
         int D;
         int aux;
-
+        
+        // ASIGNACION DE DATOS
         System.out.println("Ingrese el valor de A");
         A = leer.nextInt();
         System.out.println("Ingrese el valor de B");
@@ -29,23 +31,18 @@ public class Ejercicio_extra_02 {
         System.out.println("Ingrese el valor de D");
         D = leer.nextInt();
 
+        // VISUALIZAR EN PANTALLA LO QUE SE INGRESO
         System.out.println("Orden inicial");
         System.out.println(A +""+ B +""+ C +""+ D);
 
+        // LOGICA DE INTERCAMBIO
         aux = B; 
         B = C;
         C = A;
         A = D;
         D = aux;
-       
-        //INVERSO
-        //aux = D;
-        //D = A;
-        //A = aux;
-        //aux = B;
-        //B = C;
-        //C = aux;
-
+               
+        // VISUALIZACION DEL INTERCAMBIO
         System.out.println("Orden final");
         System.out.println(A +""+ B +""+ C +""+ D);
 

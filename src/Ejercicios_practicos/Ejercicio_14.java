@@ -16,21 +16,38 @@ public class Ejercicio_14 {
     * 129.852 yenes es un 1 €
      */
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in).useDelimiter("\n");
-
-        double euro;
-        double dolares;
-        double yenes;
-        double libras;
-
-        System.out.println("*** CONVERSOR DE DIVISAS ***");
-        System.out.println("Ingrese el valor en Euros");
-        euro = leer.nextInt();
-
+Scanner leer = new Scanner(System.in);
+        System.out.println("ingrese la cantidad de Euros :)");
+        double euros = leer.nextDouble();
+        System.out.println("elija la moneda en la que quiera comvertir :)");
+        System.out.println("1* 0.86 libras es un 1 €\n"
+                + "2* 1.28611 $ es un 1 €\n"
+                + "3* 129.852 yenes es un 1 €");
+        
+        String options=leer.next();
+        converti(options,euros);
     }
 
-}
+    public static void converti(String options, double euros) {
+        double d,y, i;
+        
+        switch (options){
+            case "dollar":
+                System.out.println(d=euros * 1.28611 );
+                break;
+            case "yenes":
+                System.out.println(y = euros * 129.852);
+                break;
+                        case "libras":
+                            System.out.println("i = ueros * 0.86");
+                            break;
+                        default:
+                            System.out.println("ha ingresado uina moneda incorrecta :(");
+                                    
 
-public static void saludoPesonalizado(int){
-  System.out.println();
+    }
+    }
 }
+    
+
+

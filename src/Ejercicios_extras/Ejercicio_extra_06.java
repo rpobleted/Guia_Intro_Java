@@ -37,13 +37,20 @@ public class Ejercicio_extra_06 {
         double resultado = 0;
         int cont = 0;
         for (int i = 0; i < n; i++) {
-            if (matriz[i] <= 1.6) {
+            if (matriz[i] < 1.6) {
                 resultado = resultado + matriz[i];
                 cont++;
             }
+
         }
-        resultado = resultado / cont;
-        return resultado;
+
+        if (cont == 0) {
+            resultado = 0;
+        } else {
+            resultado = resultado / cont;
+        }
+          return resultado;
+
     }
 
     public static double promedioGeneral(double matriz[], int n) {
