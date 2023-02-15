@@ -1,7 +1,5 @@
 package Ejercicios_extras;
 
-import com.sun.corba.se.impl.encoding.CDRInputStream_1_0;
-import com.sun.javafx.geom.PathConsumer2D;
 import java.util.Scanner;
 
 public class Ejercicio_extra_15 {
@@ -18,7 +16,7 @@ public class Ejercicio_extra_15 {
         int num2;
         int opcion;
         int suma, resta, multiplicacion;
-        float division;
+        double division;
 
         System.out.println("Ingresa 2 numeros");
         num1 = leer.nextInt();
@@ -49,11 +47,10 @@ public class Ejercicio_extra_15 {
                 case 4:
                     if (num2 == 0) {
                         System.out.println("No es posible la division por 0 en numeros enteros");
-                        break;
                     } else {
                         System.out.println("El resultado de la división es : " + division(num1, num2));
-                        break;
                     }
+                    break;
                 case 5:
                     System.out.println("Saliendo...");
             }
@@ -78,7 +75,7 @@ public class Ejercicio_extra_15 {
         return resultado;
     }
 
-    public static int division(int valor1, int valor2) {
+    public static double division(int valor1, int valor2) {
         int resultado;
         resultado = valor1 / valor2;
         return resultado;

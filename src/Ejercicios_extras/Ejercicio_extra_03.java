@@ -17,17 +17,13 @@ public class Ejercicio_extra_03 {
         System.out.println("Ingrese una letra");
         letra = leer.next();
         letra = letra.toUpperCase();
-        
-        
-        if (letra.equals("A") || letra.equals("E")|| letra.equals("I")|| letra.equals("O")|| letra.equals("U")) {
+
+        if (letra.equals("A") || letra.equals("E") || letra.equals("I") || letra.equals("O") || letra.equals("U")) {
             System.out.println("La letra ingresa es una vocal");
-        } else{
-            System.out.println("La letra ingresa no es vocal");  
+        } else {
+            System.out.println("La letra ingresa no es vocal");
         }
-        
 
     }
 
 }
-
-

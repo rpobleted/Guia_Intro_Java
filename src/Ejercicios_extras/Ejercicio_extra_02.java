@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio_extra_02 {
 
-    /*
+    /**
      * Declarar cuatro variables de tipo entero A, B, C y D y asignarle un valor
      * diferente a cada una. A continuación, realizar las instrucciones
      * necesarias para que: B tome el valor de C, C tome el valor de A, A tome
@@ -20,7 +20,7 @@ public class Ejercicio_extra_02 {
         int C;
         int D;
         int aux;
-        
+
         // ASIGNACION DE DATOS
         System.out.println("Ingrese el valor de A");
         A = leer.nextInt();
@@ -33,18 +33,18 @@ public class Ejercicio_extra_02 {
 
         // VISUALIZAR EN PANTALLA LO QUE SE INGRESO
         System.out.println("Orden inicial");
-        System.out.println(A +""+ B +""+ C +""+ D);
+        System.out.println(A + "" + B + "" + C + "" + D);
 
         // LOGICA DE INTERCAMBIO
-        aux = B; 
+        aux = B;
         B = C;
         C = A;
         A = D;
         D = aux;
-               
+
         // VISUALIZACION DEL INTERCAMBIO
         System.out.println("Orden final");
-        System.out.println(A +""+ B +""+ C +""+ D);
+        System.out.println(A + "" + B + "" + C + "" + D);
 
     }
 

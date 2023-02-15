@@ -49,7 +49,7 @@ public class Ejercicio_extra_06 {
         } else {
             resultado = resultado / cont;
         }
-          return resultado;
+        return resultado;
 
     }
 

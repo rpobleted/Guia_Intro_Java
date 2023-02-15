@@ -21,8 +21,8 @@ public class Ejercicio_extra_10 {
         int resultadoReal;
         boolean respuesta = false;
 
-        num1 = (int) (Math.random() * 101);
-        num2 = (int) (Math.random() * 101);
+        num1 = (int) (Math.random() * 10);
+        num2 = (int) (Math.random() * 10);
         resultadoReal = num1 * num2;
 
         System.out.println("El primer número es  : ?");
@@ -30,8 +30,6 @@ public class Ejercicio_extra_10 {
         System.out.println("Pista: Los números estan entre 0 y 10");
         System.out.println("");
         System.out.println("ADIVINA LA MULTIPLICACIÓN");
-        System.out.println(num1);
-        System.out.println(num2);
 
         do {
             System.out.println("Ingresa el resultado ");

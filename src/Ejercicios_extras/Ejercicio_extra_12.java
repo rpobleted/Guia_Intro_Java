@@ -13,7 +13,50 @@ public class Ejercicio_extra_12 {
      */
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
+        int digitos;
+        int u, d, c;
+        String letra = "E";
 
+        for (int i = 1; i < 1000; i++) {
+            digitos = (int) (Math.log10(i) + 1);
+            u = 0;
+            d = 0;
+            c = 0;
+            switch (digitos) {
+                case 1:
+                    u = i;
+                    if (u == 3) {
+                        System.out.println("0-0-" + letra);
+                    } else {
+                        System.out.println("0-0-" + i);
+                    }
+                    break;
+
+                case 2:
+                    u = i % 10;
+                    d = i / 10;
+
+                    if (d == 3 || u ==3) {
+                        System.out.println("0-" + "E" + "-" + u);
+
+                       
+                    } else {
+                        System.out.println("0-" + d + "-" +u);
+                    }
+
+                    
+                    
+
+                    break;
+
+                case 3:
+                    u = i % 10;
+                    d = (i / 10) % 10;
+                    c = i / 100;
+
+                    System.out.println(c + "-" + d + "-" + u);
+                    break;
+            }
+        }
     }
-
 }

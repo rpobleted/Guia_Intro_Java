@@ -6,9 +6,10 @@ public class Ejercicio_02 {
 
     public static void main(String[] args) {
 
-        /*
-
-
+        /**
+         * Escribir un programa que pida tu nombre, lo guarde en una variable y
+         * lo muestre por pantalla.
+         *
          */
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
 

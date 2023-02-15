@@ -21,35 +21,35 @@ public class Ejercicio_extra_05 {
      * descuento) y determine el importe en efectivo a pagar por dicho socio.
      */
     public static void main(String[] args) {
-    Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+
         String letra;
         int costo;
         double importe;
-    
+
         System.out.println("Ingrese la letra de clasificación de socio");
         System.out.println("Tipo A");
         System.out.println("Tipo B");
         System.out.println("Tipo C");
-        letra=leer.next();
-        letra=letra.toUpperCase();
-        
+        letra = leer.next();
+        letra = letra.toUpperCase();
+
         System.out.println("Ingrese el costo total del tratamiento");
-        costo=leer.nextInt();
-        
-        switch (letra){
+        costo = leer.nextInt();
+
+        switch (letra) {
             case "A":
                 System.out.println("Cliente tipo A: Aplica 50% dscto.");
                 importe = costo * 0.5;
                 System.out.println("El importe en efectivo a pagar es: $" + importe);
                 break;
-                
+
             case "B":
                 System.out.println("Cliente tipo B: Aplica 35% dscto.");
                 importe = costo * 0.75;
                 System.out.println("El importe en efectivo a pagar es: $" + importe);
                 break;
-                
+
             case "C":
                 System.out.println("Cliente tipo C: No aplica dscto.");
                 importe = costo * 1;
